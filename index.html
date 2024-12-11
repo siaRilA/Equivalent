@@ -154,7 +154,7 @@
             for (let i = 0; i < wavelength.length - 1; i++) {
                 const deltaX = wavelength[i + 1] - wavelength[i];
                 const trapezoidArea = deltaX * ((intensity[i] + intensity[i + 1]) / 2);
-                area += trapezoidArea;
+                area += trapezoidArea / 1;
             }
             return area;
         }
